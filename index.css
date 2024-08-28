@@ -1,0 +1,85 @@
+body {
+  font-family: Robot;
+  background-color: plum;
+}
+
+h1 {
+  font-family: fantasy;
+  font-weight: bolder;
+  font-style: oblique;
+}
+
+.input-grid {
+  margin-bottom: 15px;
+  align-items: stretch;
+}
+
+.task-input,
+.date-input {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: paleturquoise;
+  border: none;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo-list,
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 12px;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.add-button {
+  background-color: black;
+  font-size: 20px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-button,
+.delete-button {
+  transition: margin 0.1s ease-in-out, box-shadow 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px ;
+  height: 45px;
+  border: none;
+  color: white;
+}
+
+.add-button:hover{ margin: 15px;}
+
+.delete-button:hover {
+box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);}
+
+.add-button:active,
+.delete-button:active
+{opacity: 0.5;}
+
+.add-button::after,
+.delete-button::after
+{background-color: brown; }
+
+
+.delete-button {
+  background-color: purple;
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.task-name {
+  font-size: 20px;
+  display: grid;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-style: inherit;
+ color: gray;
+ border: solid rgb(209, 148, 209);
+ height: 45px;
+ align-items: center;
+ border-width: 0.1px;
+ box-shadow: 0 10px 3px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.2);
+}
