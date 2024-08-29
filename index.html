@@ -2,26 +2,36 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=10">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="index.css" rel="stylesheet" />
 <title>Todo List</title>
-<style src="index.css"></style>
-<script src="index.js"></script>
+</head>
 
-  <body>
-<center> <h1>Todo List</h1></center> 
+<body>
 
- <div class="input-grid">
-  <input placeholder="Add your Task ..."class="task-input">
-  <input type="date" class="date-input">
-  <button class="add-button">Add</button>
-  </div>
+  <header>
+    <center> <h1>Todo List</h1></center>  
+  </header>
+
+  <main>
+    <div class="input-grid">
+      <input placeholder="Add your Task ..."class="task-input">
+      <input type="date" class="date-input">
+      <button class="add-button">Add</button>
+      </div>
+
 
   <div class="todo-list"></div>
+  </main>
 
+  <center>
+    <div >
+      <button class="clear-button" onclick="clearTasks()">Clear All</button>
+    </div>
+  </center>
+  <div>
+    
+  <script src="index.js"></script>
   </body>
 </html>
